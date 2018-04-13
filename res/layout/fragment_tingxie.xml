@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     
+     <!-- load voice -->
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:layout_weight="2"
+         android:layout_marginTop="5dp"
+         android:orientation="vertical">
+         
+         <TextView 
+              android:layout_width="match_parent"
+    		  android:layout_height="wrap_content"
+    		  android:text="@string/bopu" 
+    		  android:textColor="@color/zitiyanse_hui"
+    		  android:textSize="12sp"/>
+      
+         <FrameLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="0dp"
+             android:layout_weight="4"
+	         android:background="@color/gray">
+	         
+             
+             <com.example.widget.VisualizerView
+            	android:id="@+id/visualizerViewBopu"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent" >
+       		 </com.example.widget.VisualizerView>
+       		 
+         </FrameLayout>
+         
+         <TextView 
+              android:layout_width="match_parent"
+    		  android:layout_height="wrap_content"
+    		  android:text="@string/pingpu" 
+    		  android:textColor="@color/zitiyanse_hui"
+    		  android:textSize="12sp"
+    		  android:layout_marginTop="5dp"/>
+      
+         <FrameLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="0dp"
+             android:layout_weight="4"
+	         android:background="@color/gray">
+	         
+             
+             <com.example.widget.VisualizerView
+            	android:id="@+id/visualizerViewPinpu"
+            	android:layout_width="fill_parent"
+            	android:layout_height="fill_parent" >
+       		 </com.example.widget.VisualizerView>
+       		 
+         </FrameLayout>
+         
+         <LinearLayout 
+             android:layout_width="match_parent"
+        	 android:layout_height="0dp"
+        	 android:layout_weight="1"
+        	 android:layout_marginTop="10dp"
+        	 android:orientation="horizontal">
+        	 
+             
+             <Button 
+                 android:id="@+id/requestData"
+                 android:layout_height="35dp"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_marginLeft="10dp"
+                 android:background="@drawable/button_white_selector"
+                 android:textColor="@color/zitiyanse_hui"
+                 android:textSize="14sp"
+                 android:text="@string/requestData" 
+                 android:clickable="true" />
+             
+             
+             <Button 
+                 android:id="@+id/startplay"
+                 android:layout_height="35dp"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:background="@drawable/button_white_selector"
+                 android:textColor="@color/zitiyanse_hui"
+                 android:textSize="14sp"
+                 android:text="@string/start"
+                 android:clickable="false" />
+             
+             <Button 
+                 android:id="@+id/stopplay"
+                 android:layout_height="35dp"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:background="@drawable/button_white_selector"
+                 android:textColor="@color/zitiyanse_hui"
+                 android:textSize="14sp"
+                 android:text="@string/stop"
+                 android:clickable="false"   />
+             
+             <Button 
+                 android:id="@+id/restart"
+                 android:layout_height="35dp"
+                 android:layout_width="0dp"
+                 android:layout_weight="1"
+                 android:layout_marginRight="10dp"
+                 android:background="@drawable/button_white_selector"
+                 android:textColor="@color/zitiyanse_hui"
+                 android:textSize="14sp"
+                 android:text="@string/restart"
+                 android:clickable="false" />
+         </LinearLayout>
+         
+     </LinearLayout>
+
+     <!-- user input -->
+
+     <LinearLayout
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="1"
+         android:orientation="vertical">
+         
+         <EditText 
+             android:id="@+id/input_edittext"
+             android:layout_width="match_parent"
+             android:layout_height="80dp"
+             android:layout_margin="10dp"
+             android:background="@drawable/bg_edittext"
+             android:hint="@string/input_hint"/>
+         
+         <LinearLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             
+             <Button 
+             android:id = "@+id/callback"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="35dp"
+             android:layout_marginLeft="10dp"
+             android:layout_marginRight="20dp"
+             android:background="@drawable/button_blue_selector"
+             android:textColor="@color/white"
+             android:textSize="16sp"
+             android:text="@string/callback"/>
+         
+          <Button 
+             android:id = "@+id/inputCommit"
+             android:layout_width="0dp"
+             android:layout_weight="1"
+             android:layout_height="35dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/button_blue_selector"
+             android:textColor="@color/white"
+             android:textSize="16sp"
+             android:text="@string/input_commit" />
+         </LinearLayout>
+     </LinearLayout>
+</LinearLayout>

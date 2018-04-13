@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     
+    <!-- english request -->
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="1"
+    	android:orientation="horizontal">
+        <TextView 
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+        	android:layout_marginLeft="10dip"
+        	android:textSize="20sp"
+        	android:textColor="@color/zitiyanse_hui"
+            android:text="@string/yingwenyaoqiu" />
+        
+        <Button 
+            android:id="@+id/yaoqiudetail"
+            android:layout_width="110dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_blue_selector"
+            android:text="详情"
+            android:textColor="@color/white"
+             />
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/xian_yanse" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="0dp"
+    	android:layout_weight="6"
+    	android:orientation="vertical">
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="@string/jieduan"
+            android:textColor="@color/zitiyanse_hui"
+            android:textSize="16sp"/>
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/jieduan1"
+            android:textColor="@color/zitiyanse_hui"
+            android:textSize="16sp"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/jieduan1d"
+            android:textColor="@color/lightgrey"
+            android:textSize="14sp"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/jieduan2"
+            android:textColor="@color/zitiyanse_hui"
+            android:textSize="16sp"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/jieduan2d"
+            android:textColor="@color/lightgrey"
+            android:textSize="14sp"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/jieduan3"
+            android:textColor="@color/zitiyanse_hui"
+            android:textSize="16sp"/>
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/jieduan3d"
+            android:textColor="@color/lightgrey"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

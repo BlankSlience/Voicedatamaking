@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">语音训练系统</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="city1">北京市</string>
+    <string name="city2">上海市</string>
+    <string name="city3">天津市</string>
+    <string name="city4">重庆市</string>
+    <string name="city5">广州市</string>
+    <string name="city6">深圳市</string>
+    <string name="city7">武汉市</string>
+    <string name="city8">西安市</string>
+    <string name="city9">郑州市</string>
+    <string name="city10">成都市</string>
+    <string name="city11">杭州市</string>
+    <string name="city12">沈阳市</string>
+    <string name="city13">南京市</string>
+    <string name="city14">长沙市</string>
+    <string name="city15">昆明市</string>
+    <string name="city16">青岛市</string>
+    <string name="city17">合肥市</string>
+    <string name="city18">济南市</string>
+    <string name="city19">福州市</string>
+    <string name="city20">太原市</string>
+    <string name="problem0">不限</string>
+    <string name="isNetwork">无数据，点击此处或标题栏刷新</string>
+    <string name="dialog_error_title">错误</string>
+	<string name="dialog_text_wait">请等待</string>
+    <string name="dialog_message_title">提示</string>
+    <string name="dialog_message_success">成功</string>
+    
+    <string name="error_login_error">登陆失败，请确认网络和用户名密码后重试</string>
+    <string name="error_register_email_address_null">E-mail错误</string>
+    <string name="error_register_password_not_equals">两次输入密码不一致，请重新输入</string>
+    <string name="error_register_password_null">密码不可为空</string>
+    <string name="error_register_user_name_null">用户名不可空</string>
+    <string name="error_register_user_name_repeat">用户名已被注册，请重新填写</string>
+    <string name="error_register_email_repeat">邮箱已被注册，请更换邮箱</string>
+     
+    <string name="forget_password_find_password_button">发送邮件</string>
+    <string name="forget_password_send_email">已发送邮件</string>
+    <string name="forget_password_email_error">邮件发送错误，请确认您的邮件地址</string>
+    <string name="forget_password">忘记用户名或密码？</string>
+     <string name="find_password">找回密码</string>
+    
+    <string name="input_password">请输入密码</string>
+    <string name="input_password_agin">请再次输入密码</string>
+    <string name="input_username">请输入用户名</string>
+    <string name="input_email">请输入您的邮箱</string>
+    
+    <string name="network_error">网络错误，请检查您的网络连接</string>
+    
+    <string name="login">登录</string>
+    <string name="login_title">用户登录</string>
+    
+    <string name="register_title">用户注册</string>
+    <string name="register">注册</string>
+    <string name="register_input_user_email">请输入E-mail地址</string>
+    
+    
+    <string name="success_register_success">注册成功</string>
+    
+   
+    <string name="yijian">意见反馈</string>
+    <string name="tuichu">退出账号</string>
+    <string name="touxiang">头像</string>
+    <string name="name">昵称</string>
+    <string name="sex">性别</string>
+    <string name="age">年龄</string>
+    <string name="city">地区</string>
+    <string name="introduction">简介</string>
+    <string name="voiceListEmpty">抱歉！目前没有为标注的数据</string>
+    <string name="action_about_app_text">感谢您使用此APP，欢迎对本APP提出您宝贵的意见和建议:</string>
+    <string name="action_about_app__title">我要提意见:</string>
+    <string name="action_about_app__hint">请在此输入您的意见~</string>
+    <string name="action_about_app_submit">提交</string>
+    <string name="action_about_app_submit_message_success">感谢您的提交。祝您生活愉快。</string>
+    <string name="action_about_app_submit_message_error">非常抱歉，提交出错。</string>
+    <string name="leave_app">确定要退出吗？</string>
+    <string name="logout_confirm">确定要退出账号吗？</string>
+    <string name="user_name_not_null">用户名不能为空！</string>
+    <string name="unspport_message_type">暂不支持此类消息</string>
+    
+    <string name="requestData">请求数据</string>
+    <string name="start">播放</string>
+    <string name="stop">停止</string>
+    <string name="restart">循环播放</string>    
+    <string name="input_hint">请输入听到的内容...</string>
+    <string name="input_commit">保存</string>
+    <string name="callback">回退</string>
+    <string name="yingwenyaoqiu">英文标注要求</string>
+    <string name="jieduan">为保证语音训练数据制作的准确性，需进行三个阶段的质量控制：</string>
+    
+    <string name="jieduan1">1、数据制作阶段：</string>
+    <string name="jieduan2">2、数据检查阶段：</string>
+    <string name="jieduan3">3、后台自动识别与人工抽检阶段</string>
+    
+    <string name="jieduan1d">要求数据制作者认真阅读帮助文档，按照标注要求对听见的语音进行标注.系统自动记录数据时长</string>
+    <string name="jieduan2d">数据检查者对数据制作者已经完成标注的语音数据进行再次确认，发现错误及时修正。系统自动记录检查数据量和错误率</string>
+    <string name="jieduan3d">经过检查确认后的数据提交后台服务器后，项目组会安排专人对该数据进行抽样检查，并记录错误率。后期还会利用语音识别引擎对数据进行自动识别。</string>
+    
+    <string name="zongjie">经过三个阶段处理后的数据才被认定为质量合格的数据。系统会根据不同用户各阶段完成的数据制作数量和数据中的错误率计算综合质量。</string>
+    
+    <string name="totalrequest">总体要求</string>
+    <string name="example">标注示例</string>
+    <string name="Caircompany">国内航空公司呼号</string>
+    <string name="Uaircompany">国外航空公司呼号</string>
+    <string name="highread">高度层读法</string>
+    <string name="frequentwords">常用词汇</string>
+    
+    <string name="bopu">波谱</string>
+    <string name="pingpu">频谱</string>
+    
+    <item name="tag_first" type="id"></item>
+    <item name="tag_second" type="id"></item>
+
+</resources>
