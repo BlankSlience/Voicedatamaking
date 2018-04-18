@@ -55,7 +55,7 @@
     	    android:id="@+id/tab_bar"
     	    android:background="@color/tabcolor"
     	    android:layout_width="match_parent"
-    	    android:layout_height="50dp"
+    	    android:layout_height="55dp"
     	    android:orientation="horizontal"
     	    android:baselineAligned="false">
     	

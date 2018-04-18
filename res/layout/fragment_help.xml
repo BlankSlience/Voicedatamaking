@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dip"
         	android:layout_marginLeft="10dip"
-        	android:textSize="20sp"
+        	android:textSize="18sp"
         	android:textColor="@color/zitiyanse_hui"
             android:text="@string/yingwenyaoqiu" />
         
@@ -49,7 +49,7 @@
             android:layout_margin="10dp"
             android:text="@string/jieduan"
             android:textColor="@color/zitiyanse_hui"
-            android:textSize="16sp"/>
+            android:textSize="14sp"/>
         <TextView 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             android:layout_marginRight="10dp"
             android:text="@string/jieduan1"
             android:textColor="@color/zitiyanse_hui"
-            android:textSize="16sp"/>
+            android:textSize="14sp"/>
         
         <TextView 
             android:layout_width="match_parent"
@@ -68,7 +68,7 @@
             android:layout_marginRight="10dp"
             android:text="@string/jieduan1d"
             android:textColor="@color/lightgrey"
-            android:textSize="14sp"/>
+            android:textSize="12sp"/>
         
         <TextView 
             android:layout_width="match_parent"
@@ -78,7 +78,7 @@
             android:layout_marginRight="10dp"
             android:text="@string/jieduan2"
             android:textColor="@color/zitiyanse_hui"
-            android:textSize="16sp"/>
+            android:textSize="14sp"/>
         
         <TextView 
             android:layout_width="match_parent"
@@ -88,7 +88,7 @@
             android:layout_marginRight="10dp"
             android:text="@string/jieduan2d"
             android:textColor="@color/lightgrey"
-            android:textSize="14sp"/>
+            android:textSize="12sp"/>
         
         <TextView 
             android:layout_width="match_parent"
@@ -98,7 +98,7 @@
             android:layout_marginRight="10dp"
             android:text="@string/jieduan3"
             android:textColor="@color/zitiyanse_hui"
-            android:textSize="16sp"/>
+            android:textSize="14sp"/>
         
         <TextView 
             android:layout_width="match_parent"
@@ -108,6 +108,6 @@
             android:layout_marginRight="10dp"
             android:text="@string/jieduan3d"
             android:textColor="@color/lightgrey"
-            android:textSize="14sp"/>
+            android:textSize="12sp"/>
     </LinearLayout>
 </LinearLayout>

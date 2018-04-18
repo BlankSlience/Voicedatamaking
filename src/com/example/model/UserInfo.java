@@ -7,7 +7,7 @@ import com.avos.avoscloud.AVObject;
 @AVClassName(UserInfo.USERInfo_CLASS)
 public class UserInfo extends AVObject{
 	
-	static final String USERInfo_CLASS = "UserInfo";
+	static final String USERInfo_CLASS = "userInfo";
 	
 	private static final String USERPHOTO_KEY = "userPhoto";
 	private static final String USERNAME_KEY = "username";

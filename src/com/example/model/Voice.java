@@ -1,11 +1,13 @@
 package com.example.model;
 
 import java.io.File;
+import java.io.Serializable;
 import java.net.URISyntaxException;
 
 import com.avos.avoscloud.AVClassName;
 import com.avos.avoscloud.AVFile;
 import com.avos.avoscloud.AVObject;
+import com.avos.avoscloud.LogUtil.log;
 
 import android.net.Uri;
 
@@ -13,9 +15,9 @@ import android.net.Uri;
 public class Voice extends AVObject{
 	static final String VOICE_CLASS = "Voice";
 	
-	private static final String VOICEFILE = "VoiceFile";
-	private static final String ISTRANS = "IsTrans";
-	private static final String VOICEID = "objectId";
+	public static final String VOICEFILE = "VoiceFile";
+	public static final String ISTRANS = "IsTrans";
+	public static final String VOICEID = "objectId";
 
 	public AVFile getVoice() {
 		return this.getAVFile(VOICEFILE);
@@ -34,9 +36,9 @@ public class Voice extends AVObject{
 	}
 	
 	public Uri getVoiceURI() throws URISyntaxException {
-		AVFile voiceFile = getAVFile(VOICEFILE);
+		AVFile voiceFile = this.getAVFile(VOICEFILE);
 		if(voiceFile != null) {
-			String voiceurl =  voiceFile.getUrl();
+			String voiceurl =  voiceFile.getUrl();			
 			Uri uri = Uri.fromFile(new File(voiceurl));		
 			return uri;
 		} else {

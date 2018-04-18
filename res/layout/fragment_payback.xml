@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dip"
         android:layout_marginLeft="5dip"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:textColor="@color/zitiyanse_hui"
         android:text="@string/action_about_app_text" />
 

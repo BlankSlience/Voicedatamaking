@@ -71,7 +71,6 @@ public class MainActivity extends BaseActivity {
 		textViewTitle = (TextView) findViewById(R.id.tv_title);
 
 		// 设置偏号设置按钮
-		// 设置偏号设置按钮
 		if (getUserId() != null) {
 			btnUser = (Button) findViewById(R.id.btn_own);
 			btnUser.setOnClickListener(new OnClickListener() {

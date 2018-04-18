@@ -3,6 +3,7 @@ package com.example.widget;
 import java.util.HashSet;
 import java.util.Set;
 
+import com.avos.avoscloud.LogUtil.log;
 import com.example.dao.AudioData;
 import com.example.dao.FFTData;
 import com.example.renderer.Renderer;
@@ -78,7 +79,12 @@ public class VisualizerView extends View {
     }
 
     // Create the Visualizer object and attach it to our media player.
-    mVisualizer = new Visualizer(player.getAudioSessionId());
+    int audioSessionId = player.getAudioSessionId();
+    log.e("audioSessionid","audioSessionid="+audioSessionId);
+    if(mVisualizer != null) {
+    	mVisualizer = null;
+    }
+    mVisualizer = new Visualizer(audioSessionId);
     mVisualizer.setCaptureSize(Visualizer.getCaptureSizeRange()[1]);
 
     // Pass through Visualizer data to VisualizerView

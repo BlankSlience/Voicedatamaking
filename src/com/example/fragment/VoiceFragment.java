@@ -1,9 +1,12 @@
 package com.example.fragment;
 
 import java.io.IOException;
+import java.lang.Thread.UncaughtExceptionHandler;
 import java.net.URISyntaxException;
 import java.util.List;
 
+import com.avos.avoscloud.AVException;
+import com.avos.avoscloud.LogUtil.log;
 import com.example.UIhelper.LimitInputTextWatcher;
 import com.example.dao.VoiceDao;
 import com.example.dao.VoiceTranDao;
@@ -31,7 +34,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class VoiceFragment extends BasicFragment{
+public class VoiceFragment extends BasicFragment implements UncaughtExceptionHandler{
 	private MediaPlayer mPlayer;
 	private MediaPlayer nPlayer;
     private MediaPlayer mSilentPlayer;  /* to avoid tunnel player issue */
@@ -45,7 +48,7 @@ public class VoiceFragment extends BasicFragment{
     private EditText userInput;
     private Button saveBtn;
     private Button notSaveBtn;
-    private List<Voice> voiceList = null;
+    private List<Voice> voiceList;
     private LeanUser currentUser;
     private Voice currentVoice = null;
     private Boolean isComplete = false;
@@ -60,10 +63,28 @@ public class VoiceFragment extends BasicFragment{
     @Override
     public void onViewCreated(View v, Bundle savedInstanceState) {
 		super.onViewCreated(v, savedInstanceState);
-		
 		currentUser = LeanUser.getCurrentUser();
-		//voiceList = VoiceDao.findVoiceByNotTrans();
 		
+		//在此调用下面方法，才能捕获到线程中的异常
+        Thread.setDefaultUncaughtExceptionHandler(this);
+ 	
+		new Thread(new Runnable() {
+
+			@Override
+			public void run() {
+				voiceList = VoiceDao.findVoiceByNotTrans();
+				log.e("into thread");
+				if(voiceList != null) {
+					int size = voiceList.size();
+					log.e("voiceList size:" + size);
+				} else {
+					log.e("voicelist null:" + voiceList);
+				}
+			}
+			
+		}).start();
+		
+			
 		mPlayer = MediaPlayer.create(getActivity(), R.raw.jielun);
 		nPlayer = MediaPlayer.create(getActivity(), R.raw.jielun);
 
@@ -83,10 +104,11 @@ public class VoiceFragment extends BasicFragment{
         saveBtn = (Button) v.findViewById(R.id.inputCommit);
         notSaveBtn = (Button) v.findViewById(R.id.callback);
         
-//        if(voiceList.size() == 0) {
-//			//showVoiceListEmpty();
+//      if(voiceList.size() == 0) {
+//			showVoiceListEmpty();
 //			requestData.setClickable(false);
 //		} 
+        
 //        if(currentVoice != null) {
 //        	play.setClickable(true);
 //        	stop.setClickable(true);
@@ -149,11 +171,10 @@ public class VoiceFragment extends BasicFragment{
 
 		@Override
 		public void onClick(View arg0) {
-//			
+			
 //			currentVoice = voiceList.get(position);	
 //			try {
 //				Uri uri = currentVoice.getVoiceURI();
-//				System.out.println("uri:"+uri);
 //			} catch (URISyntaxException e1) {
 //				e1.printStackTrace();
 //			}
@@ -321,4 +342,11 @@ public class VoiceFragment extends BasicFragment{
 							}
 						}).show();
 	}
+
+
+	@Override
+	public void uncaughtException(Thread arg0, Throwable arg1) {
+		Log.i("AAA", "uncaughtException   " + arg1);
+	}
+
 }

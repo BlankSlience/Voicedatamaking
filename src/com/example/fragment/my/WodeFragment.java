@@ -18,7 +18,6 @@ import com.example.fragment.BasicFragment;
 import com.example.model.LeanUser;
 import com.example.uiwork.R;
 import com.example.utils.UiHelper;
-import com.example.MainActivity;
 import com.example.activity.LoginActivity;
 import com.squareup.picasso.Picasso;
 
